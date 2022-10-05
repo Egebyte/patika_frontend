@@ -1,0 +1,32 @@
+.center{
+    text-align: center;  
+}
+
+.centerlist{
+    list-style-position: inside;
+}
+
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
+    color: darkorchid;
+}
+
+p{
+    text-align: center;
+}
+
+ol{
+    text-align: center;
+    overflow: hidden;
+}
+
+ul{
+    text-align: center;
+}
+
+img{
+    width: 300px;
+}
+body{
+    background-color: bisque;
+}
