@@ -1,0 +1,214 @@
+/* Class for the Navigation Area(header) */
+.header {
+  list-style-type: none;
+  margin: 10px;
+  overflow: hidden;
+  margin-right: 16px;
+  font-family: arial,sans-serif;
+  font-size: 13px;
+}
+/* Class of <a> tags that are children of headerli class */
+.headerli a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+  float:right;
+  margin-right: 5px;
+}
+/* What happens to the above class when the user hovers their mouse on it */
+.headerli a:hover {
+  /* Making the text underlined when hovered on */
+  text-decoration: underline;
+}
+/* Container class */
+.container {
+  text-align: center;
+  margin: 100px;
+}
+/* Class for the search area where the user inputs text*/
+.search-area {
+  background: #fff;
+  display: flex;
+  /* Border settings */
+  border: 1px solid #dfe1e5;
+  /* Giving it rounder corners */
+  border-radius: 25px;
+  box-shadow: none;
+  z-index: 3;
+  height: 44px;
+  margin: 0 auto;
+  margin-top: -77px;
+  width: 582px;
+}
+/* What happens to the above class when the user hovers their mouse on it */
+.search-area:hover {
+  /* Making a shadow appear when hovered on */
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+}
+
+.search {
+  flex: 1;
+  display: flex;
+  padding: 5px 8px 0 16px;
+  padding-left: 14px;
+}
+/* Class for the magnifying glass image on the search bar */
+.search-img {
+  display: flex;
+  align-items: center;
+  padding-right: 13px;
+  margin-top: -5px;
+}
+/* Class for the span parented by search-img class */
+.search-img span {
+  color: #9aa0a6;
+  height: 20px;
+  width: 20px;
+  margin-top: 0px;
+  display: inline-block;
+  fill: currentColor;
+  line-height: 24px;
+  position: relative;
+}
+
+/* Class for the microphone image on the search bar */
+.search-voice {
+  display: flex;
+  align-items: center;
+  padding-right: 13px;
+  margin-top: -5px;
+  margin-left: -600px;
+}
+/* Class for the button parented by search-voice class  */
+.search-voice button{
+  background-color: transparent;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  margin-top: 0px;
+  margin-left: 80px;
+  display: inline-block;
+  fill: currentColor;
+  line-height: 24px;
+  position: relative;
+  /* Making the curser a pointer type when on the button */
+  cursor: pointer;
+  border: none;
+}
+
+.input-enter {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.input-area {
+  color: transparent;
+  flex: 100%;
+  white-space: pre;
+  font: 16px arial, sans-serif;
+  line-height: 34px;
+  width: 1000px;
+  height: 34px !important;
+  
+  display: block;
+}
+
+.input {
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.87);
+  word-wrap: break-word;
+  outline: none;
+  display: flex;
+  flex: 100%;
+  margin-top: -68px;
+  font: 16px arial, sans-serif;
+  line-height: 34px;
+  height: 34px !important;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: start;
+  appearance: textfield;
+  cursor: text;
+}
+/* Class for the div containing search buttons */
+.buttons{
+  /* Getting them to the center */
+  text-align: center;
+}
+/* Class for search buttons */
+.buttonsettings{
+  margin-top: 30px;
+  border: 1px solid #f2f2f2;
+  color: #5f6368;
+  font: 14px "Arial", sans-serif;
+  height: 36px;
+  border-radius: 5%;
+}
+/* What happens to the above class when the user hovers ther cursor on */
+.buttonsettings:hover{
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+}
+/* Spesific details for Google Search button */
+.googlesearch {
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+/* Spesific details for I'm feeling lucky button */
+.feelinglucky {
+  margin-left: 5px;
+  padding: 0 16px;
+  line-height: 27px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+/* Details for the Navigation Area(footer) */
+.footer {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #dfe1e5;
+  /* Changing only the top side of the border */
+  border-top: 1px solid #dadce0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-left: -8px;
+  line-height: 10px;
+  background-color: #f2f2f2 ;
+}
+/* Details for list items in the Navigation Area(footer) */
+.footerli {
+  float: left;
+  list-style:none;
+}
+/* Details for <a> tags in the footerli class */
+.footerli a {
+  display: block;
+  color: #70757a;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin-left: 14px;
+  margin-right: -20px;
+}
+/* What happens when the user hovers their cursor on the <a> tags on the footerli class */
+.footerli a:hover {
+  text-decoration: underline;
+}
