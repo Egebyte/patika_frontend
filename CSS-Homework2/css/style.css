@@ -1,0 +1,56 @@
+/* Used for centering divs and texts */
+.center{
+    text-align: center;
+    margin-left:50px;
+    margin-right: 50px;
+}
+/* Used for horizontally centering images */
+.centerimage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+/* Used as a box to include the search bar part */
+.searchbarbox{
+    height: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: lightgrey;
+}
+/* Used as a parent box to include the links and subscription parts below the search bar */
+.submenubox{
+    margin-top: 3px;
+    height: 80px;
+}
+/* Used as a box for Special Searches */
+.firstgreen{
+    box-sizing: border-box;
+    margin-right: .5%;
+    padding: 10px;
+    height: 100%;
+    width: 34.5%;
+    background-color: aquamarine;
+    float: left;
+}
+/* Used as a box for links that are related to Google */
+.secondgreen{
+    box-sizing: border-box;
+    margin-right: .5%;
+    padding-top: 7.5px;
+    height: 100%;
+    font-size: small;
+    width: 20%;
+    background-color: darkseagreen;
+    float: left;
+}
+/* Usead as a box for subscription and archive */
+.thirdgreen{
+    box-sizing: border-box;
+    padding-top: 2px;
+    height: 100%;
+    font-size: small;
+    width: 44.5%;
+    background-color: darkolivegreen;
+    float: left;
+}
