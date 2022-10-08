@@ -1,0 +1,32 @@
+body{
+    background-color: #E9ECEF ;
+}
+.centerlist{
+    list-style-position: inside;
+}
+
+.nav-span{
+    background-color: red;
+}
+/* Styling the divs that has card class from Bootstrap */
+div.card{
+
+    height: 600px;
+    margin-top: 1em;
+    background-color: rgb(166, 176, 184);
+
+}
+/* Styling the spans that has badge class from Bootstrap */
+span.badge{
+    margin-top: 0.5em;
+    font-size: 15px;
+}
+/* Syling the a's that has btn and bg-transparent classes from Bootstrap */
+div.card.bg-transparent{
+    height: 100px;
+}
+/* Syling the a's that has btn class from Bootstrap */
+a.btn{
+    width: 250px;
+    font-size: 20px;
+}
