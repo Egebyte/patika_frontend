@@ -83,4 +83,4 @@ Example: Root is ***x***. In the root's right is ***y***. In its left is ***z***
 ---
 <p align="center" width="100%">
     <img src="BST_Search.png"/>
-<*p>
+</p>
