@@ -12,5 +12,6 @@ In this project [patika.dev](patika.dev) provided us with the HTML and CSS files
 - Using Bootstrap's Toast make alerts appear for:
     1. Attempting to add an empty task to the list
     2. Successfully adding a task to the list
+- As a bonus make a system to save the list in localStorage
 ---
 After finishing this project I can confidently say that this project improved my understanding of Document Object Model(DOM) and how to use them.

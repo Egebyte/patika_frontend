@@ -5,6 +5,8 @@ let removeBtns = document.getElementsByClassName("remove"); // Buttons with remo
 let myToast, bStrapAlert;                                   // Variables for toast
 
 ADD_BTN.addEventListener("click", newElement);              // Event listener for the button next to the input field
+window.addEventListener('load',callList);
+
 
 // Function to add a new element to the list
 function newElement(){                                      
@@ -22,6 +24,7 @@ function newElement(){
         bStrapAlert = new bootstrap.Toast(myToast);         // Define the toast
         bStrapAlert.show();                                 // Show the toast
         TO_DO_LIDOM.append(liDOM);                          // Append to the ul element
+        saveList();    
         resetInput();                                       // Reset the value of input
     } else {                                                // If it's empty
         myToast = document.querySelector(".toast.error");   // Get the DO with toast and error classes
@@ -39,6 +42,7 @@ function resetInput(){
 function removeElement(btn){                                 
     let liElement = btn.parentElement;                      // Button is the child of a li element so we can learn which element will be removed with this
     TO_DO_LIDOM.removeChild(liElement);                     // Using the DOM of the ul element we can remove the li element which is its child
+    saveList();
 }
 // Function for user to indicate that a task is done. Takes the li element as its parameter. This proccess can be taken back as a solution of a missclick
 // Background color becomes green and text color becomes white if the task is done
@@ -51,4 +55,13 @@ function taskDone (item){
         item.style.backgroundColor = "#04AA6D";             // Makes the background green(#04AA6D) 
         item.style.color = "white";                         // Makes the text white
     }
+    saveList();
+}
+// Function for storing the list in localStorage
+function saveList(){
+    localStorage.setItem("list", TO_DO_LIDOM.innerHTML);    // Stores the innerHTML of the To-Do List at keyword 'list' in localStorage
+}
+// Function for calling the list from localStorage
+function callList(){
+    TO_DO_LIDOM.innerHTML = localStorage.getItem("list");   // Makes the innerHTML of the To-Do List same as the value stored at keyword 'list' in localStorage
 }
